@@ -1,0 +1,174 @@
+html {
+ font-family: Trebuchet MS;
+ padding: 0;
+}
+
+body {
+ max-width: 1024px;
+ margin: auto;
+ background: white;
+ font-size: .8em;
+ padding-bottom: 24px;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+li {
+ padding: 2px;
+}
+
+a, a:active, a:visited {
+ color: #369;
+}
+
+a:hover {
+ color: #136;
+}
+
+h1 {
+ font-size: 3em;
+}
+
+div.header {
+ display: flex;
+ background: #D79719;
+ color: white;
+ font-size: 1.1em;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+div.header>div {
+ padding: 18px;
+ min-width: 200px;
+ flex: 1 1 0;
+}
+
+div.header>div.my-infos ul li:first-of-type {
+ margin-bottom: 12px;
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
+div.header>div.title {
+ text-align: center;
+}
+
+div.header>div.photo {
+ text-align: right;
+}
+
+div.header>div.photo>img {
+ width: 100px;
+ border-width: 2px;
+ border-style: solid;
+ border-color: rgba(0, 0, 0, .3) rgba(255, 255, 255, .3) rgba(255, 255, 255, .1) rgba(0, 0, 0, .2);
+}
+
+div.body {
+ margin-top: 24px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+div.body>div.category {
+ flex: 1 1 0;
+ min-width: 360px;
+ border-width: 3px 0 0;
+ border-style: solid;
+ border-color: #369;
+}
+
+div.body>div.category>h2 {
+ margin-top: 0;
+ background: #369;
+ display: block;
+ width: 80%;
+ max-width: 300px;
+ padding: 3px 3px 3px 12px;
+ color: white;
+}
+
+div.body>div.category>ul>li {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+div.body>div.category>ul>li>p {
+ display: inline-block;
+ vertical-align: top;
+ min-width: 150px;
+ margin: 1px;
+ flex: 1 1 0;
+}
+
+div.body>div.category p.margin {
+ min-width: 80px;
+ max-width: 120px;
+}
+
+div.body>div.category p.bigger {
+ font-weight: bold;
+}
+
+div.body>div.category p.description {
+ min-width: 180px;
+}
+
+span.where, span.libraries {
+ font-style: italic;
+ color: #666;
+}
+
+div.dots {
+ display: inline-block;
+ width: 86px;
+ float: right;
+}
+
+div.dots>div.dot {
+ display: inline-block;
+ width: 11px;
+ height: 11px;
+ border: 1px solid #D79719;
+ border-radius: 6px;
+ box-shadow: 0 0 3px #D79719 inset;
+}
+
+div.dots>div.dot.ok {
+ background: #fd6;
+}
+
+@media all and (max-width: 800px) {
+ div.header {
+  height: 100vh;
+  flex-flow: column nowrap;
+ }
+ div.header>div {
+  padding: 0;
+ }
+ div.header>div.photo {
+  text-align: center;
+ }
+ div.header>div.my-infos {
+  text-align: center;
+ }
+ div.body>div.category {
+  min-width: 320px;
+ }
+}
+
+@media all and (max-width: 600px) {
+ div.body>div.category {
+  min-width: 320px;
+ }
+}
+
+@media all and (max-width: 320px) {
+ div.body>div.category {
+  min-width: 180px;
+ }
+}

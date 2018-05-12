@@ -1,0 +1,70 @@
+dd@font-face {
+ font-family: debock;
+ src: url(../fonts/Debock.otf);
+}
+
+html, body {
+ width: 100%;
+ height: 100%;
+ border: 0;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background: #39d;
+ font-family: debock;
+}
+
+h1 {
+ margin: 24px 0 48px;
+ padding: 40px;
+ text-align: center;
+ color: white;
+ background: #D79719;
+ font-size: 42px;
+}
+
+div.div_canvas {
+ width: 600px;
+ height: 400px;
+ margin: auto;
+ background: #a1d7ff;
+}
+
+div.div_frame {
+ width: 600px;
+ height: 400px;
+ box-shadow: 0 0 12px black inset;
+}
+
+canvas {
+ width: 600px;
+ height: 400px;
+}
+
+div.link-to-cv {
+ text-align: center;
+ margin: 24px auto;
+}
+
+div.link-to-cv span {
+ color: white;
+ padding: 12px;
+ background: #D79719;
+ font-size: 23px;
+}
+
+div.link-to-cv span:after {
+  content :"";
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+  margin : 1px 6px 1px 12px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+div.link-to-cv span:hover {
+ background: #E7A729;
+ cursor: pointer;
+}
