@@ -1,0 +1,50 @@
+html {
+ font-family: Trebuchet MS;
+ padding: 0;
+ /* print : font-size : 1.22em */
+}
+
+body {
+ max-width: 1024px;
+ margin: auto;
+ background: white;
+ font-size: .8em;
+ padding-bottom: 24px;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+li {
+ padding: 2px;
+}
+
+a, a:active, a:visited {
+ color: #369;
+}
+
+a:hover {
+ color: #258;
+}
+
+h1 {
+ font-size: 3em;
+}
+
+h2 {
+ margin-top: 0;
+ background: #369;
+ display: block;
+ padding: 3px 3px 3px 12px;
+ color: white;
+ width: 80%;
+ max-width: 300px;
+}
+
+div.category {
+ border-width: 3px 0 0;
+ border-style: solid;
+ border-color: #369;
+}
