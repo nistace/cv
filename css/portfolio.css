@@ -1,85 +1,90 @@
 h1 {
  background: #D79719;
- margin :0;
-  text-align: center;
-  padding : 24px;
-  color:white;
+ margin: 0;
+ text-align: center;
+ padding: 24px;
+ color: white;
 }
 
 h2 {
-  display:block;
-  width:100%;
-  margin : 0;
-  padding: 6px 0;
-  text-align: center;
-  max-width: none;
+ display: block;
+ width: 100%;
+ margin: 0;
+ padding: 6px 0;
+ text-align: center;
+ max-width: none;
 }
 
 div.category {
-  display:flex;
-  flex-wrap: wrap;
-  margin-bottom:12px;
+ display: flex;
+ flex-wrap: wrap;
+ margin-bottom: 12px;
 }
-
 
 div.category:nth-of-type(even) {
-  flex-direction: row-reverse;
+ flex-direction: row-reverse;
 }
 
-div.category > div.column {
-  flex: 1 1 0;
-   min-width : 420px;
+div.category>div.column {
+ flex: 1 1 0;
+ min-width: 420px;
 }
 
-div.category > div.column.title{
-  background: #369;
-  color:white;
+div.category>div.column.title {
+ background: #369;
+ color: white;
 }
 
-div.category > div.column.title > div.description  {
-  padding: 3px 6px;
+div.category>div.column.title>div.description {
+ padding: 3px 6px;
 }
 
 div.column.title a {
-  color:white;
+ color: white;
 }
 
 div.column.title a:hover {
-  color:#D79719;
+ color: #D79719;
 }
 
-div.category > div.column > p {
-  text-align: justify;
-  margin : 9px 6px;
-  padding: 6px;
-  font-size:14px;
-  line-height:24px;
+div.category>div.column>p {
+ text-align: justify;
+ margin: 9px 6px;
+ padding: 6px;
+ font-size: 14px;
+ line-height: 24px;
 }
 
-
-div.category > div.column > p.quote {
-  color: #555;
-  font-style: italic;
+div.category>div.column>p.quote {
+ color: #555;
+ font-style: italic;
 }
 
-div.category > div.column > ul.resume-info {
-  list-style: disclosure-closed;
-  margin : 9px 24px;
-  border : 1px solid #369;
-  box-shadow : 0 0 2px #369 inset;
-  padding: 12px 12px 12px 24px;
+div.category>div.column>ul.resume-info {
+ list-style: disclosure-closed;
+ margin: 9px 24px;
+ border: 1px solid #369;
+ box-shadow: 0 0 2px #369 inset;
+ padding: 12px 12px 12px 24px;
 }
 
 video {
-  border-style: solid;
-  border-color : #369;
-  border-width : 1px 0;
-  background: #369;
+ border-style: solid;
+ border-color: #369;
+ border-width: 1px 0;
+ background: #369;
 }
 
 @media all and (max-width: 500px) {
-  div.category > div.column {
-    flex: 1 1 0;
-     min-width : 300px;
-  }
+ div.category>div.column {
+  min-width: 300px;
+ }
+}
+
+/** IE **/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+ div.category>div.column {
+  flex: 1;
+ }
 }
