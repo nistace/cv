@@ -47,3 +47,27 @@ div.category {
  border-style: solid;
  border-color: #369;
 }
+
+
+div.index-buttons {
+  height : 400px;
+  width:600px;
+  top : calc(50% - 200px);
+  left : calc(50% - 300px);
+  position : fixed;
+}
+
+div.index-buttons button {
+  width:calc(100% - 6px);
+  height : calc(50% - 6px);
+  margin : 3px;
+  border : 0;
+  background : #369;
+  color : white;
+  font-size : 24px;
+  cursor:pointer;
+}
+
+div.index-buttons button:hover {
+  filter : brightness(120%);
+}
