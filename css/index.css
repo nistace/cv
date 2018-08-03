@@ -1,73 +1,72 @@
 html {
- font-family: Trebuchet MS;
- padding: 0;
+  font-family: Trebuchet MS;
+  padding: 0;
 }
 
 body {
- max-width: 1024px;
- margin: auto;
- background: white;
- font-size: .8em;
- padding-bottom: 24px;
+  max-width: 1024px;
+  margin: auto;
+  background: white;
+  font-size: .8em;
+  padding-bottom: 24px;
 }
 
 ul {
- list-style: none;
- padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 li {
- padding: 2px;
+  padding: 2px;
 }
 
 a, a:active, a:visited {
- color: #369;
+  color: #369;
 }
 
 a:hover {
- color: #258;
+  color: #258;
 }
 
 h1 {
- font-size: 3em;
+  font-size: 3em;
 }
 
 h2 {
- margin-top: 0;
- background: #369;
- display: block;
- padding: 3px 3px 3px 12px;
- color: white;
- width: 80%;
- max-width: 300px;
+  margin-top: 0;
+  background: #369;
+  display: block;
+  padding: 3px 3px 3px 12px;
+  color: white;
+  width: 80%;
+  max-width: 300px;
 }
 
 div.category {
- border-width: 3px 0 0;
- border-style: solid;
- border-color: #369;
+  border-width: 3px 0 0;
+  border-style: solid;
+  border-color: #369;
 }
 
-
 div.index-buttons {
-  height : 400px;
-  width:600px;
-  top : calc(50% - 200px);
-  left : calc(50% - 300px);
-  position : fixed;
+  height: 400px;
+  width: 600px;
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+  position: fixed;
 }
 
 div.index-buttons button {
-  width:calc(100% - 6px);
-  height : calc(50% - 6px);
-  margin : 3px;
-  border : 0;
-  background : #369;
-  color : white;
-  font-size : 24px;
-  cursor:pointer;
+  width: calc(100% - 6px);
+  height: calc(50% - 6px);
+  margin: 3px;
+  border: 0;
+  background: #369;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 div.index-buttons button:hover {
-  filter : brightness(120%);
+  filter: brightness(120%);
 }
