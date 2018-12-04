@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Nathan Istace : The Lost CV Epic Quest</title>
+  <link rel="shortcut icon" href="game/TemplateData/favicon.ico">
+  <link rel="stylesheet" href="game/TemplateData/style.css">
+  <script src="game/TemplateData/UnityProgress.js"></script>
+  <script src="game/Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "game/Build/build.json", {
+      onProgress: UnityProgress
+    });
+  </script>
+</head>
+
+<body>
+  <div class="webgl-content">
+    <div class='header'>
+      <div class="title">Nathan Istace : The Lost CV Epic Quest</div>
+      <div class="skip button" onclick="gotoCV();"></div>
+    </div>
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen button" onclick="gameInstance.SetFullscreen(1)"></div>
+    </div>
+  </div>
+</body>
+
+</html>
